@@ -1,0 +1,105 @@
+    <html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+            body{margin: auto 0;
+            background-color:#8CCDD1; }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+        background-color: #8CCDD1;
+            }
+        li {
+        float: left;
+    }
+            li a {
+                display: block;
+                color: #165B60;
+                text-align: center;
+                 font-size: 250%;
+                padding: 16px;
+                text-decoration: none;
+            }
+/*
+            li a:hover {
+        background-color: #86B1B8;
+    }
+*/
+            .content{padding: 10px;}
+            div h1{color: #165B60;}
+            div a{padding: 10px;}
+            .button {
+    background-color: #8CCDD1;  
+    border: none;
+    color: #165B60;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+/*    margin:100px;*/
+                margin-top: 50px;
+                margin-left: 70px;
+      transition-duration: 0.4s;
+    cursor: pointer;
+}
+            .button1 {
+    background-color: 8CCDD1; 
+    color: #165B60; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #86B1B8;
+    color: #165B60;
+}
+            #container{display: none;}
+ 
+        </style>
+    </head>
+        
+    <body>
+        <div id="blank">show page</div>
+        
+        <div id="container">
+       <ul>
+      <li><a href=""><img src="https://seeklogo.com/images/M/monsters-university-logo-A606D8C464-seeklogo.com.gif" width="80px;"></a></li>
+      <li><a href="">Home</a></li>  
+      <li><a href="">About</a></li>
+      <li><a href="">Faculties</a></li>
+      <li><a href="">Apply Now</a></li>
+    </ul> 
+        <div>
+    <img src="https://lumiere-a.akamaihd.net/v1/images/open-uri20160812-3094-al28gw_d44ce6ad.jpeg?region=0%2C0%2C1024%2C320" width=100%>
+                </div>
+        <div class="content">
+        <h1>View the history of historcial monsters:</h1>
+         <a href="" title="James P. Sullivan"><img src="https://i.pinimg.com/736x/46/f7/58/46f758dca8fcdfe82a7fd35a5bf95aa4--monsters-university-experience.jpg" width=150px></a>
+            <a href="" title="Mike Wazowski"><img src="https://vignette.wikia.nocookie.net/disney/images/5/54/MikeWazowski-MU.png/revision/latest?cb=20131112051712" width=150px></a>
+           <a href="" title="Randall Boggs"><img src="https://s-media-cache-ak0.pinimg.com/originals/70/ca/5e/70ca5e3e79a31782f271be0edb914fcb.jpg" width=150px></a>
+            <a href="" title="Henry J. Waternoose III"><img src="https://vignette.wikia.nocookie.net/disney/images/5/51/Henry_J._Waternoose_III.jpg/revision/latest/scale-to-width-down/515?cb=20160404021602" width=200px></a>
+            <button class="button button1">Apply now and be one of the great</button>
+
+        </div>
+        </div>
+        </body>
+        
+<script>
+    $( ".blank" ).click(function () {
+   
+    $( "#container" ).slideDown( "slow" ) 
+    
+    });
+    
+    
+          $("li").hover(function(){
+    $(this).css("background-color", "#86B1B8");
+            }, function(){
+        $(this).css("background-color", "#8CCDD1");
+    });
+     
+         </script>
+
+    </html>
