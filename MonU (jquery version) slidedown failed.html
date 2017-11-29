@@ -1,6 +1,6 @@
     <html>
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
         <style>
             body{margin: auto 0;
             background-color:#8CCDD1; }
@@ -58,6 +58,7 @@
             #container{display: none;}
  
         </style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
         
     <body>
@@ -87,18 +88,23 @@
         </body>
         
 <script>
-    $( ".blank" ).click(function () {
-   
-    $( "#container" ).slideDown( "slow" ) 
-    
-    });
-    
-    
-          $("li").hover(function(){
-    $(this).css("background-color", "#86B1B8");
-            }, function(){
-        $(this).css("background-color", "#8CCDD1");
-    });
+//You have to use $(document).ready to ensure that the page has completely loaded before executing the script
+    $(document).ready(function(){
+	//You addressed blank as a class not an id, addressing ids is done by $("#_____")
+			$("#blank").click(function () {
+
+			$( "#container" ).slideDown("slow"); 
+			//Don't forget to hide the blank div
+			$("#blank").hide();
+			});
+			
+			
+				  $("li").hover(function(){
+			$(this).css("background-color", "#86B1B8");
+					}, function(){
+				$(this).css("background-color", "#8CCDD1");
+			});
+	});
      
          </script>
 
